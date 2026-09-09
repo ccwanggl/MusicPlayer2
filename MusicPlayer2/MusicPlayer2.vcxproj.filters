@@ -2714,9 +2714,17 @@
     <Xml Include="res\ui\list_preview_panel.xml">
       <Filter>资源文件</Filter>
     </Xml>
-    <Xml Include="res\ui\test_panel.xml" />
-    <Xml Include="res\ui\settings_panel.xml" />
-    <Xml Include="res\ui\toggle_setting_group.xml" />
-    <Xml Include="res\ui\test_dialog.xml" />
+    <Xml Include="res\ui\settings_panel.xml">
+      <Filter>资源文件</Filter>
+    </Xml>
+    <Xml Include="res\ui\test_dialog.xml">
+      <Filter>资源文件</Filter>
+    </Xml>
+    <Xml Include="res\ui\test_panel.xml">
+      <Filter>资源文件</Filter>
+    </Xml>
+    <Xml Include="res\ui\toggle_setting_group.xml">
+      <Filter>资源文件</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

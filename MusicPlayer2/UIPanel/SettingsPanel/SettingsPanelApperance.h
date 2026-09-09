@@ -29,6 +29,7 @@ private:
     UiElement::ToggleSettingGroup* show_album_cover_btn{};
     UiElement::ToggleSettingGroup* round_corder_btn{};
     UiElement::ToggleSettingGroup* enable_bckground_btn{};
+    UiElement::ToggleSettingGroup* album_cover_as_background_btn{};
     UiElement::ToggleSettingGroup* show_statusbar_btn{};
     UiElement::ToggleSettingGroup* use_standard_titlebar{};
     UiElement::ToggleSettingGroup* show_menubar_btn{};

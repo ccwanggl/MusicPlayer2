@@ -29,6 +29,8 @@ void CSettingsPanelApperance::Init()
     ConnectToggleTrigger(round_corder_btn, m_data.button_round_corners);
     enable_bckground_btn = m_root_element->FindElement<UiElement::ToggleSettingGroup>("enableBackground");
     ConnectToggleTrigger(enable_bckground_btn, m_data.enable_background);
+    album_cover_as_background_btn = m_root_element->FindElement<UiElement::ToggleSettingGroup>("albumCoverAsBackground");
+    ConnectToggleTrigger(album_cover_as_background_btn, m_data.album_cover_as_background);
     show_statusbar_btn = m_root_element->FindElement<UiElement::ToggleSettingGroup>("showStatusbar");
     ConnectToggleTrigger(show_statusbar_btn, m_data.always_show_statusbar);
     use_standard_titlebar = m_root_element->FindElement<UiElement::ToggleSettingGroup>("showStandardTitlebar");
@@ -77,6 +79,7 @@ void CSettingsPanelApperance::SettingDataToUi()
     show_album_cover_btn->GetToggleBtn()->SetChecked(m_data.show_album_cover);
     round_corder_btn->GetToggleBtn()->SetChecked(m_data.button_round_corners);
     enable_bckground_btn->GetToggleBtn()->SetChecked(m_data.enable_background);
+    album_cover_as_background_btn->GetToggleBtn()->SetChecked(m_data.album_cover_as_background);
     show_statusbar_btn->GetToggleBtn()->SetChecked(m_data.always_show_statusbar);
     use_standard_titlebar->GetToggleBtn()->SetChecked(m_data.show_window_frame);
     ui_refresh_interfal_value->SetText(std::to_wstring(m_data.ui_refresh_interval));
