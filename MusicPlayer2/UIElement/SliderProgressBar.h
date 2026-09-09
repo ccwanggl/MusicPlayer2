@@ -13,12 +13,15 @@ namespace UiElement
         virtual bool MouseMove(CPoint point) override;
         virtual bool MouseLeave() override;
         virtual void HideTooltip() override;
+        virtual bool LButtonUp(CPoint point) override;
+        virtual bool SetCursor() override;
 
         virtual COLORREF GetBackColor(bool highlight_color) override;
         virtual BYTE GetBackAlpha(bool highlight_color) override;
 
     private:
-        bool last_hover;
+        bool last_hover{ true };
+        bool progress_hover{};
     };
 }
 

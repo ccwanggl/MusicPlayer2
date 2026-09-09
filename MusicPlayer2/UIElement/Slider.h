@@ -46,9 +46,10 @@ namespace UiElement
         std::function<void(Slider*)> pos_changed_trigger;
         std::function<void(Slider*)> drag_finish_trigger;
 
+        CRect rect_handle;
+
     private:
         CRect rect_back;
-        CRect rect_handle;
         int pos_mouse_pressed{ -1 };    //记录鼠标按下时的进度
         int* binded_value{};
     };
